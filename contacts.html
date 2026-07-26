@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Simple Tech</title>
+    <link rel="icon" type="image/jpeg" href="images/ts1.jpg">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="images/ts1.jpg" alt="Simple Tech Logo" class="logo-img">
+            <span class="logo-text">Simple Tech</span>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="contacts.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="page-banner">
+        <h1>Contact Us</h1>
+        <p>Get in touch with our team for inquiries and support.</p>
+    </section>
+
+    <section class="section">
+        <div id="success-message" class="success-banner" style="display: none;">
+            <div class="success-icon">&#10004;</div>
+            <h3>Message Sent Successfully!</h3>
+            <p style="margin-bottom: 10px;">Thank you for contacting us. We'll get back to you shortly.</p>
+            <p style="font-size: 0.9rem; color: #555; margin-bottom: 10px;">Note: this form uses a demo </p>
+            <button class="btn btn-primary" id="show-form-btn" onclick="showForm()">Send Another Message</button>
+        </div>
+
+        <form id="contact-form" class="contact-form" action="/contact" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Simple Tech. All rights reserved.</p>
+    </footer>
+
+    <script src="javascript/app.js"></script>
+</body>
+
+</html>
